@@ -2083,6 +2083,16 @@ A GitLab project needs no forge token, only `glab` on `PATH`, authenticated via 
 A project whose reviews are created by a review tool that uploads its own snapshot of the worker's commits is registered `[direct-PR forge=external]`; it is never detected, ships `direct-PR` only, carries no yolo, and needs the [external review tool](#external-review-tool-configexternal-reviewmd-configexternal-review-url-configexternal-review-backup) configuration below.
 [`docs/external-review-forge.md`](external-review-forge.md) is the design.
 
+## PR text selection (data/projects.md pr= token)
+
+A project with no `pr=` token keeps today's behavior: the no-mistakes pipeline's `pr` step writes the pull request title and body and refreshes them on every validated push.
+A project whose outside maintainer reviews and merges, and whose hand-written PR text the pipeline would overwrite, is registered `[no-mistakes pr=manual]`.
+`pr=manual` is the one accepted value, off by default, read like `forge=`: `bin/fm-project-mode.sh --pr <name>` reads it back, and its header owns the grammar and refusals.
+It applies to a `no-mistakes` ship on a project with no `forge=` binding only, so the registry refuses it on `direct-PR`, which already leaves the PR text to the worker, on `local-only`, which opens no PR, and beside a forge.
+Firstmate passes it to `bin/fm-brief.sh --pr manual` at intake the same way it passes `--forge`, `bin/fm-spawn.sh` refuses a brief whose `pr=` disagrees with the registry, and `bin/fm-promote.sh` reads it from the registry.
+The generated brief then has the worker pass `--skip pr,ci` on every `no-mistakes axi run`, write the PR title and body itself, open or update the PR with `gh-axi`, and wait for the PR's checks; `bin/fm-dod-lib.sh` owns that text.
+The token is the thin registry form of no-mistakes' own keep-text option, [kunchenguid/no-mistakes#1648](https://github.com/kunchenguid/no-mistakes/issues/1648), and is meant to map onto it once that exists.
+
 ## GitHub Enterprise hosts (config/github-hosts)
 
 `config/github-hosts` is an optional local, gitignored file naming the GitHub Enterprise hosts whose pull request URLs this home accepts, one lowercase hostname per line, such as `leadsonline.ghe.com`.
@@ -2593,7 +2603,7 @@ The operator supplies trust and required consent facts, not hashes.
 **Working state and cleanup**
 
 `state/extensions/<extension-id>/` is created when binding performs its initial handshake and is that package's home-local working namespace for later verification and invocation.
-`state/extension-invocations/` contains private host-owned exact process-group cleanup records only while an enabled package invocation is starting or running; retirement and reconciliation retain their existing owners until those records prove the group extinct.
+`state/extension-invocations/` contains private host-owned invocation cleanup records, including residue retained after interruption; [extension cleanup safety](extension-bindings.md#executable-protocol) owns their recovery rules.
 
 This integrity boundary does not sandbox trusted same-user code, so bind only a package trusted to run with the operator's operating-system access.
 
@@ -3000,7 +3010,7 @@ Raising the confirm window lengthens every supervision cycle and delays wake del
 
 **Report launch failures**
 
-A source that can never start is reported as `failed=` with a non-zero exit on every `reconcile`, rather than counted as `started` and retried silently as though it were healthy, so a wedged source stays visible instead of presenting as armed.
+A detached launch that never confirms is reported as `failed=` with a non-zero exit on every `reconcile`, rather than counted as `started` and retried silently as though it were healthy, so a wedged source stays visible instead of presenting as armed.
 The `failed=` count reaches only the command's caller because `bin/fm-watch.sh` discards `reconcile` output and exit status.
 For that reason, `reconcile` also publishes a durable `check` wake once per failure episode, with key `procevent:<id>:launch-failed:<registration-identity>-<episode-nonce>`.
 Later cycles stay silent for that episode until a launch confirms.
@@ -3015,6 +3025,13 @@ A later fresh failure gets a fresh key, because the watcher never re-surfaces a 
   A runner that was merely slow to claim needs no operator action.
 - A source stranded on a claim nothing may automatically displace is announced the same way, once per stranded claim generation, as described above.
 - `bin/fm-watch.sh` surfaces both under their own headlines - `process-event source stranded` and `process-event source failed to start` - rather than as a captured result.
+
+An extension invocation cleanup refusal prevents a replacement launch and increments `uncertain=` instead of `failed=`.
+It also publishes one durable wake per source failure episode using the `launch-failed` key family and `process-event source failed to start` headline.
+The payload points to the extension host's cleanup diagnostic in the source's home and effective state root, without copying package diagnostics into the wake.
+Reconciliation preserves the registration and retries cleanup on later cycles.
+Successful reconciliation cleanup, an attached start that acquires the claim, or reconciliation observing a live owner clears the cleanup announcement marker, so another refusal on the same registration receives a fresh wake key.
+Retirement removes the marker as well.
 
 **Reject unusable settings**
 
@@ -3169,7 +3186,7 @@ FMX_X_THREAD_MAX=25     # maximum messages in one auto-split reply thread
 FMX_FOLLOWUP_MAX_AGE_SECS=604800   # local window for posting Relay completion follow-ups (7 days)
 FMX_FOLLOWUP_MAX_COUNT=3   # local cap on Relay completion follow-ups per linked mention
 FM_PF_RETRY_BACKOFF_SECS=900   # seconds before the next attempt after a retryable promised-public-reply delivery error
-FM_LOCK_STALE_AFTER=2   # grace seconds for missing or nonnumeric lock-owner PIDs (minimum 2s); dead numeric PIDs, and live ones whose start time no longer matches the holder's recorded start time, have no age grace
+FM_LOCK_STALE_AFTER=2   # grace seconds for missing or nonnumeric lock-owner PIDs (minimum 2s); dead numeric PIDs, and live ones whose start time (or, for the watch lock, process identity) no longer matches the holder's recorded value, have no age grace
 FM_GUARD_GRACE=300      # beacon freshness threshold for guard verdicts, arm health checks, and the primary turn-end guard; see docs/turnend-guard.md for model-aware exceptions
 FM_CLAUDE_AUTOARM_ATTEMPTS=2   # bounded Stop-owned arm attempts per Claude auto-arm cycle; accepted values are 1, 2, or 3
 FM_CLAUDE_AUTOARM_SYNC_WAIT_MS=800   # milliseconds the --claude turn-end guard waits for watcher health, an open Stop auto-arm generation claim, or a fresh epoch before deciding recovery ownership or failure progression
