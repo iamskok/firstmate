@@ -1,0 +1,27 @@
+{
+  "args": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/outer.sb",
+    "/opt/homebrew/bin/codex",
+    "sandbox",
+    "-c",
+    "sandbox_mode=\"workspace-write\"",
+    "-c",
+    "sandbox_workspace_write.exclude_tmpdir_env_var=true",
+    "-c",
+    "sandbox_workspace_write.exclude_slash_tmp=true",
+    "-c",
+    "sandbox_workspace_write.network_access=false",
+    "-C",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace",
+    "--",
+    "python3",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/sandbox-probe.py",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/probe-inside.txt",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/sandbox-outside-probe.txt"
+  ],
+  "exit": 2,
+  "stdout": "",
+  "stderr": "WARNING: proceeding, even though we could not create PATH aliases: Operation not permitted (os error 1)\nerror: the following required arguments were not provided:\n  --permission-profile <NAME>\n\nUsage: codex sandbox --permission-profile <NAME> --config <key=value> --cd <DIR> <COMMAND>...\n\nFor more information, try '--help'.\n"
+}

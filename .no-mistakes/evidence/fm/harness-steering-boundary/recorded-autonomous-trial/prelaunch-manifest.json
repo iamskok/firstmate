@@ -1,0 +1,23 @@
+{
+  "candidate": "38d5796619ebc5318b40c7dcff1e994d29595f4e",
+  "sources": [
+    {
+      "path": "bin/fm-brief.sh",
+      "sha256": "cb316debef2258f016bef4dac57b1ebaef51d433cbb775658b0ac321af1af13c"
+    },
+    {
+      "path": "bin/fm-task-inbox-lib.sh",
+      "sha256": "91e409cffdb1b8686bd42b9fa4fe7c113d886e36751947cbbaa831f5fbf14658"
+    },
+    {
+      "path": "bin/fm-polytoken-lib.sh",
+      "sha256": "5f8fa4011317c946842f0b2296eaea2e0297ce1e0c8b337c18ef5baa654a2d65"
+    }
+  ],
+  "emitted_instruction_sha256": "600bba517e5b1a6097d2d3ce6b398f8a0d34ebceb9b15a518c584c06f8d81bbc",
+  "prompt_sha256": "72153fab6209a9e4dbb9b60b5d1cf13733bf1944612f8118af13acfa1a03ff91",
+  "workload_sha256": "144dd8de6925edbb639463e20cc9a779372492fd8f6391aacd690877e4968b73",
+  "single_trial": true,
+  "wall_clock_bound_seconds": 240,
+  "first_command_bound_seconds": 45
+}

@@ -1,0 +1,1 @@
+Both workloads completed successfully in order. Updated `report.md` with the result and required markers, acknowledged both inbox messages, and left `decision.status` unchanged.

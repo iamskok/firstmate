@@ -1,0 +1,126 @@
+{
+  "run": "01M64634C9P9711DWYJR5PT2KT",
+  "candidate": "4a81a203bf8fbc4f3cf3f9731c4dda9debc4239b",
+  "verified_files": [
+    {
+      "path": "prelaunch-manifest.json",
+      "bytes": 1113,
+      "sha256": "0c0aa794eb1c7cdae81a4a265a2e9dbf92cde52227c7ce17c17cdf96f4e9412f",
+      "verified": true
+    },
+    {
+      "path": "launch.json",
+      "bytes": 1487,
+      "sha256": "fb308ae9717159ade83f781f33589b069d17c5145e29c25cfa486d8dcd57daf5",
+      "verified": true
+    },
+    {
+      "path": "result.json",
+      "bytes": 1184,
+      "sha256": "8779e9185847fb8736d1e84ff7d63dba100a75700e80a5ffc35c62683b2ab8a5",
+      "verified": true
+    },
+    {
+      "path": "stdout.jsonl",
+      "bytes": 6867,
+      "sha256": "a2a064b8f27283569318c29ecf8c26b91e1ec266bd22357825f4540403ee0372",
+      "verified": true
+    },
+    {
+      "path": "timed-events.jsonl",
+      "bytes": 8573,
+      "sha256": "3502b7969cc2f1a9d5c2dccca5933e1d73f73eb7c1ea2d48d01974072b36cd03",
+      "verified": true
+    },
+    {
+      "path": "stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "verified": true
+    },
+    {
+      "path": "drive-once.py",
+      "bytes": 4295,
+      "sha256": "588c927521b6fed86fd468e0a96495e962cd8bc8ef1ed36dae79fd815fe79026",
+      "verified": true
+    },
+    {
+      "path": "sandbox-direct-probe.json",
+      "bytes": 753,
+      "sha256": "7ad4839a709b69f9f46cfe8d09aeaa873612cd0637ffb3adbb96f315a2380760",
+      "verified": true
+    },
+    {
+      "path": "isolated-auth-status.json",
+      "bytes": 140,
+      "sha256": "69bbe628a7b67d7fe28c9a75d31f804bb675cf31860a03cde496cf264544ca0d",
+      "verified": true
+    },
+    {
+      "path": "workspace/sandbox-probe.py",
+      "bytes": 318,
+      "sha256": "5d17c53661b9b53c57a97e9a82b7e8ad57a29cab821defceb86d31928fd4ff22",
+      "verified": true
+    },
+    {
+      "path": "runtime/catalog.json",
+      "bytes": 658607,
+      "sha256": "69af12f94a39dabd1a1ded8f5257b4884d2118902ea2b5b9cffbf4a1925dfa65",
+      "verified": true
+    },
+    {
+      "path": "workspace/prompt.txt",
+      "bytes": 3429,
+      "sha256": "f9c701213f1cfe644ef81e58ce4581816efd76a980464ca65203d918028d760d",
+      "verified": true
+    },
+    {
+      "path": "workspace/emitted-inbox.md",
+      "bytes": 2587,
+      "sha256": "7f3233f433379d6be0dfd6b34c45e6c46c16ee43a84d4074fbe9c08ed8fec555",
+      "verified": true
+    },
+    {
+      "path": "workspace/workload.py",
+      "bytes": 793,
+      "sha256": "144dd8de6925edbb639463e20cc9a779372492fd8f6391aacd690877e4968b73",
+      "verified": true
+    },
+    {
+      "path": "workspace/events.jsonl",
+      "bytes": 1112,
+      "sha256": "948c2e9de03f632ebccfc28defb915beb59e526a1f9bf11ba22ca68bc9dfc3a7",
+      "verified": true
+    },
+    {
+      "path": "workspace/report.md",
+      "bytes": 273,
+      "sha256": "09b2901e2c016c1403b5ad10bffef70fd9aa7587f57ab1c6bc2413e4829a0c1d",
+      "verified": true
+    },
+    {
+      "path": "workspace/decision.status",
+      "bytes": 59,
+      "sha256": "6e18d259d53879a8a14ea7758396ad14dbad13b93029d07f23f76c0059c1695c",
+      "verified": true
+    },
+    {
+      "path": "workspace/final.txt",
+      "bytes": 156,
+      "sha256": "f52d8f7ab74fa390d15b9c2cd1743f37df6965943c03e6435a9cdecb7161ac68",
+      "verified": true
+    },
+    {
+      "path": "workspace/home/state/synthetic-worker.inbox/handled/001.msg",
+      "bytes": 169,
+      "sha256": "2d4afccd09f42ab1604573d3d0d18641308574e15393a465135de520863c59d2",
+      "verified": true
+    },
+    {
+      "path": "workspace/home/state/synthetic-worker.inbox/handled/002.msg",
+      "bytes": 166,
+      "sha256": "6fea90ce15ca855e4acbcdbbcd7395e792f06ba978341e1c0d31de42197197a8",
+      "verified": true
+    }
+  ]
+}

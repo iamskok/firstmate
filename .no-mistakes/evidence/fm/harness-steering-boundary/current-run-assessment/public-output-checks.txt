@@ -1,0 +1,6 @@
+ship: production brief emits the same checkpoint/receipt/deferred-action/decision contract as the trial; absent and empty checkpoints exit silently.
+scout: production brief emits the same checkpoint/receipt/deferred-action/decision contract as the trial; absent and empty checkpoints exit silently.
+secondmate: production brief emits the same checkpoint/receipt/deferred-action/decision contract as the trial; absent and empty checkpoints exit silently.
+The production inbox writer/body reader preserves the message; the doorbell uses ordered accepted-receipt wording and the existing glob and handled destination.
+The production Polytoken facet emits accepted-receipt wording and delegates boundaries and keyed decisions to the launch brief.
+The supplied offline enactment executed the current production writer, body reader, generated listing and decision folding in disposable ship/scout fixtures. It preserved command completion and deferred conditions with the keyed decision still open. The script controls receipt order and is not autonomous evidence.

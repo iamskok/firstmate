@@ -1,0 +1,26 @@
+{
+  "run": "01M64634C9P9711DWYJR5PT2KT",
+  "candidate": "4a81a203bf8fbc4f3cf3f9731c4dda9debc4239b",
+  "sources": [
+    {
+      "path": "bin/fm-brief.sh",
+      "sha256": "cb316debef2258f016bef4dac57b1ebaef51d433cbb775658b0ac321af1af13c"
+    },
+    {
+      "path": "bin/fm-task-inbox-lib.sh",
+      "sha256": "91e409cffdb1b8686bd42b9fa4fe7c113d886e36751947cbbaa831f5fbf14658"
+    },
+    {
+      "path": "bin/fm-polytoken-lib.sh",
+      "sha256": "5f8fa4011317c946842f0b2296eaea2e0297ce1e0c8b337c18ef5baa654a2d65"
+    }
+  ],
+  "emitted_instruction_sha256": "7f3233f433379d6be0dfd6b34c45e6c46c16ee43a84d4074fbe9c08ed8fec555",
+  "prompt_sha256": "f9c701213f1cfe644ef81e58ce4581816efd76a980464ca65203d918028d760d",
+  "workload_sha256": "144dd8de6925edbb639463e20cc9a779372492fd8f6391aacd690877e4968b73",
+  "single_trial": true,
+  "wall_clock_bound_seconds": 240,
+  "first_command_bound_seconds": 45,
+  "method_reused_from": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once",
+  "only_driver_change": "production writer source path updated to exact current run worktree"
+}

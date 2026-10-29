@@ -1,0 +1,5 @@
+(version 1)
+(allow default)
+(deny file-write*)
+(allow file-write* (subpath "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once"))
+(allow file-write* (literal "/dev/null"))

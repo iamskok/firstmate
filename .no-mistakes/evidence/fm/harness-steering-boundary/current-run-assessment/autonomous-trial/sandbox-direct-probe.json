@@ -1,0 +1,18 @@
+{
+  "args": [
+    "/opt/homebrew/bin/codex",
+    "sandbox",
+    "--permission-profile",
+    ":workspace",
+    "-C",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-fork-recovery/workspace",
+    "--",
+    "python3",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-fork-recovery/workspace/sandbox-probe.py",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-fork-recovery/workspace/probe-inside.txt",
+    "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/fork-sandbox-outside-probe.txt"
+  ],
+  "exit": 0,
+  "stdout": "{\"inside_write\": true, \"outside_write_denied\": true}\n",
+  "stderr": ""
+}

@@ -1,0 +1,17 @@
+Offline scripted enactment of rendered guidance; not proof of autonomous agent compliance.
+ship: 001/002 delivered while command blocked; command remains alive; neither acknowledged; no inbox polling
+ship: existing command returned normally
+ship: read 001.msg: Defer action until the owned campaign is complete.
+ship: acknowledged 001.msg
+ship: read 002.msg: Record receipt; choice still needs an answer.
+ship: acknowledged 002.msg
+ship: next command started after both acknowledgements; deferred condition retained; keyed choice remains open
+ship: empty checkpoint returned silently; no polling process introduced
+scout: 001/002 delivered while command blocked; command remains alive; neither acknowledged; no inbox polling
+scout: existing command returned normally
+scout: read 001.msg: Defer action until the owned campaign is complete.
+scout: acknowledged 001.msg
+scout: read 002.msg: Record receipt; choice still needs an answer.
+scout: acknowledged 002.msg
+scout: next command started after both acknowledgements; deferred condition retained; keyed choice remains open
+scout: empty checkpoint returned silently; no polling process introduced

@@ -1,0 +1,7 @@
+ship: generated checkpoint, accepted-receipt, deferred-action and separate-decision guidance; empty/absent inbox command exits silently.
+Current emitted inbox section equals the trial section byte for byte after substituting the task-owned inbox path.
+scout: generated checkpoint, accepted-receipt, deferred-action and separate-decision guidance; empty/absent inbox command exits silently.
+secondmate: generated checkpoint, accepted-receipt, deferred-action and separate-decision guidance; empty/absent inbox command exits silently.
+Real inbox writer and doorbell formatter emit accepted-receipt reminder with the original inbox glob, numeric ordering and handled destination.
+Real Polytoken facet writer emits accepted-receipt guidance and points to the launch brief for boundaries and keyed decisions.
+Replayed supplied scripted protocol using current production writer, body reader, generated listing command and decision folding; both ship and scout passed. This script chooses acknowledgement order; it is not autonomous behavior evidence.

@@ -1,0 +1,36 @@
+{
+  "pid": 63345,
+  "exit": 0,
+  "end_ns": 1793287105135322000,
+  "timed_out": false,
+  "controller_error": null,
+  "messages_delivered": true,
+  "observations": [
+    {
+      "event": "delivered",
+      "time_ns": 1793287064286803000,
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/home/state/synthetic-worker.inbox/001.msg",
+      "body": "Corrective instruction: append CORRECTION_APPLIED to report.md before starting the second workload."
+    },
+    {
+      "event": "delivered",
+      "time_ns": 1793287064344762000,
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/home/state/synthetic-worker.inbox/002.msg",
+      "body": "Deferred instruction: append DEFERRED_DONE to report.md only after the second workload succeeds."
+    },
+    {
+      "event": "before-release",
+      "time_ns": 1793287065349930000,
+      "first_pid_alive": true,
+      "pending": [
+        "001.msg",
+        "002.msg"
+      ],
+      "handled": []
+    },
+    {
+      "event": "release-first",
+      "time_ns": 1793287065351249000
+    }
+  ]
+}

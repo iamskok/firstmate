@@ -1,0 +1,6 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "Logged in using ChatGPT\n",
+  "auth_source": "existing file-backed ChatGPT login via fixture symlink; no token copied or printed"
+}

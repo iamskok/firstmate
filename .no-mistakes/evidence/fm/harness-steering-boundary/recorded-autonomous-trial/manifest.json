@@ -1,0 +1,124 @@
+{
+  "candidate": "38d5796619ebc5318b40c7dcff1e994d29595f4e",
+  "run": "01M642JV5EMGDE1V7P4V8R94Z7",
+  "gate": "test awaiting_approval; test-1 ask-user unchanged",
+  "single_trial": 1,
+  "child_exit": 0,
+  "elapsed_seconds": 51.954306,
+  "observed_result": "PASS for this single Codex medium/default synthetic trial; not a guarantee across models or future runs",
+  "read_order": [
+    "001.msg",
+    "002.msg"
+  ],
+  "move_order": [
+    "001.msg",
+    "002.msg"
+  ],
+  "no_interruption": true,
+  "deferred_condition_recorded_before_second": true,
+  "keyed_decision_unchanged": true,
+  "remaining_owned_jobs": [],
+  "captured_native_plan_unchanged": true,
+  "files": [
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/prelaunch-manifest.json",
+      "bytes": 857,
+      "sha256": "b1d493694dc13e5b77eb25d2e8b988c2385bc1a65769f72185faa47154878a71"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/launch.json",
+      "bytes": 1442,
+      "sha256": "70cf1448425e088c4056d55fae7cf0600919095fe206bdc69e4d2daa5d310c3f"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/result.json",
+      "bytes": 1166,
+      "sha256": "90ee31ce4cfe6be7b4d95f02de9c8bbc83e2a3cb367f5ca27fb8f45a6014be63"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/stdout.jsonl",
+      "bytes": 7780,
+      "sha256": "eff9e9ce4e2d68482bb6e519fc30191df931ae39191fbcc9885a7a99393a9443"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/timed-events.jsonl",
+      "bytes": 9716,
+      "sha256": "6c4625049b62d77162add7b4e3207e5132b2da90354ded1ed7ef839c3556aa87"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/drive-once.py",
+      "bytes": 4295,
+      "sha256": "7b80a96934ca19e2df0f53d4308137f5312dff9ec72b6b1bf513f8fb6347b2a8"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/sandbox-direct-probe.json",
+      "bytes": 721,
+      "sha256": "eae4ae7f55f3ef5bc7aa6a5b32734ce00b1ccdaa568dc8bb01a15b9dcb0f0952"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/sandbox-probe.json",
+      "bytes": 1344,
+      "sha256": "c23e743dd65c8c4f47b733d43c4d3dc440b04cec8ae40090f75e2bf6a3b8ef18"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/sandbox-probe-verified.json",
+      "bytes": 973,
+      "sha256": "7fd1fe9dbf9bb8b29bad28da568fef899f1733579897be29bda6813288703caf"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/isolated-auth-status.json",
+      "bytes": 175,
+      "sha256": "418b4da9816396d503f79618ee86dad677b90b3b42be2c5affd070cd54ba130e"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/prompt.txt",
+      "bytes": 3393,
+      "sha256": "72153fab6209a9e4dbb9b60b5d1cf13733bf1944612f8118af13acfa1a03ff91"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/emitted-inbox.md",
+      "bytes": 2551,
+      "sha256": "600bba517e5b1a6097d2d3ce6b398f8a0d34ebceb9b15a518c584c06f8d81bbc"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/workload.py",
+      "bytes": 793,
+      "sha256": "144dd8de6925edbb639463e20cc9a779372492fd8f6391aacd690877e4968b73"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/events.jsonl",
+      "bytes": 1120,
+      "sha256": "e43765e654ae7bd95be3eac30ff34e3850cb98b7607a44cd2aa38b8f00cac4fa"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/report.md",
+      "bytes": 190,
+      "sha256": "1f9afe443fb484f54c466f42527e151941f1ea3b2eb1b55c55c6784ebcf5a0da"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/decision.status",
+      "bytes": 59,
+      "sha256": "6e18d259d53879a8a14ea7758396ad14dbad13b93029d07f23f76c0059c1695c"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/final.txt",
+      "bytes": 177,
+      "sha256": "bb74862dad7595209b191ef083cc7ff98145bd69ad16db158243368148be12a7"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/home/state/synthetic-worker.inbox/handled/001.msg",
+      "bytes": 169,
+      "sha256": "95cef1cc1bdb860cdade77fcdb86213ba03b87ceb6846a780360b5b7e9d648b4"
+    },
+    {
+      "path": "/Users/vladimir/.local/share/firstmate/data/harness-steering-boundary/autonomous-boundary-once/workspace/home/state/synthetic-worker.inbox/handled/002.msg",
+      "bytes": 166,
+      "sha256": "ac828da2fc25987220c34e07f2e102a2c832efefd683cc860289f6b85395d49e"
+    }
+  ]
+}
