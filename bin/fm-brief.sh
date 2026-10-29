@@ -451,8 +451,8 @@ INBOX_DIR=$(shell_quote "$STATE/$ID.inbox")
 # owned by bin/fm-task-inbox-lib.sh. The doorbell names the inbox as
 # "$FM_TASK_INBOX", which bin/fm-spawn.sh exports into every launch; the full
 # path here remains the fallback for a worker launched without that export.
-# The doorbell itself is self-describing, so this section is reinforcement
-# for the natural-checkpoint habit, not the only carrier of the instruction.
+# This section owns worker command-boundary and receipt guidance;
+# the self-describing doorbell also carries the receive reminder.
 # config/wait-no-turns (docs/configuration.md) adds the line that a waiting
 # worker does not poll the inbox: checkpoint checks happen during active work,
 # so waiting still spends no turns.
